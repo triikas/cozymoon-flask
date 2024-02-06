@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Cozymoon</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/log.ico') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sty.css') }}">
+</head>
+<body>
+
+    <div class="window image">
+        <div style="height: 1112px;">
+            <nav class="d-flex justify-content-around" style="padding-left: 60px; padding-right: 60px; padding-top: 30px;">
+                <div  class="d-flex align-items-center">
+                    <a href="/" class="d-block"><img src="{{ url_for('static', filename='img/logo-up.png') }}" style="height: 50px; width: 134px"></a>
+
+                </div>
+                <div class="d-flex justify-content-around align-items-center">
+                    <div><a>Dota 2</a></div>
+                    <div class="mx-5"><a>Minecraft</a></div>
+                    <div class="mx-5"><a>Valorant</a></div>
+                    <div class="mx-5"><a>Mobile Legends</a></div>
+                    <div class="mx-5"><a>Counter-Strike: 2</a></div>
+                    <div class="mx-5"><a>Legue of Legends</a></div>
+                </div>
+
+            </nav>
+            <div class="d-flex justify-content-end" style="margin-top: 150px">
+                <div style="width: 85%">
+                    <h2 style="font-size: 4em">О нас</h2>
+                    <p style="font-size: 1.5em" class="m-0">Cozy Moon - это не просто сервер в Discord</p>
+                    <p style="font-size: 1.5em">Это сообщество, в котором люди объединяются вместе, чтобы хорошо провести время. В этом мире каждый воспринимает хорошее проведение времени по своему: для одних это веселье в играх-песочницах, для других это забавные матчи в соревновательных играх, а для третьих - серьёздный подхд к игре и рвение в киберспорт. Мы разделяем все эти подходы и создаём уютную атмосферу для того, чтобы ваше времяприпровождение стало действительно хорошим.</p>
+                    <div class="d-flex justify-content-end mt-5" style="padding-right: 300px;"><a class="btn ds-btn d-flex align-items-center justify-content-center">Посетить CozyMoon</a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="moon-block"></div>
+        <div class="moon" style="background-image: url({{ url_for('static', filename='img/moon.svg') }}); width: 880px; height: 880px; position: relative";></div>
+    </div>
+{#    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>#}
+{#    <script src="{{ url_for('static', filename='func.js') }}"></script>#}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: #261744;
+    color: #ffffff;
+	padding: 0;
+}
+.image{
+	background-image : url(img/fon2.svg);
+	background-repeat : no-repeat;
+	background-size: cover;
+	position : absolute ;
+	left : 0px;
+	top : 0px;
+	width : 99vw;
+	height : 3361px;
+}
+.moon-block{
+	background: linear-gradient(to left, #716CADFF, rgba(113, 108, 173, 0));
+	height: 548px;
+	width: 99vw;
+
+}
+.moon{
+	top: -757px;
+	left: 832px;
+}
+.ds-btn{
+	height: 50px;
+	width: 200px;
+	border-radius: 50px;
+	background-color: #fced9a;
+}
