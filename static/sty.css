@@ -1,7 +1,27 @@
+@font-face {
+	font-family: 'Futura normal';
+	src: url(fonts/FuturaPTLight.otf)  format('opentype');
+}
+@font-face {
+	font-family: 'Futura bold';
+	src: url(fonts/FuturaPTMedium.otf)  format('opentype');
+}
+@font-face {
+	font-family: 'Futura extra bold';
+	src: url(fonts/FuturaPTBold.otf)  format('opentype');
+}
 body{
     background-color: #261744;
     color: #ffffff;
 	padding: 0;
+	font-family: Futura normal;
+	font-size: 1.4em;
+}
+.footer-nav-block{
+	width: 155px;
+	& a{
+		margin-bottom: 5px;
+	}
 }
 .image{
 	background-image : url(img/fon2.svg);
@@ -19,13 +39,89 @@ body{
 	width: 100%;
 
 }
+h4{
+	font-family: "Futura bold";
+	font-size: 1.2em;
+}
+input, textarea{
+	background-color: rgba(115,108,175);
+	color: rgba(78,75,119);
+	border-radius: 18px;
+	/*border: none;*/
+	outline: none;
+	border: 2px #736CAF solid;
+	/*border-color: rgb(115,108,175);*/
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	&:focus{
+		border-color: rgb(249, 235, 152);
+	}
+	&::placeholder{
+		color: rgb(70, 67, 107);
+	}
+
+
+}
+textarea{
+	resize: none;
+}
+form{
+	margin-top: 170px;
+	max-width: 500px;
+}
+.footer a{
+	text-decoration: none;
+	color: rgba(222, 218, 229, 0.79) !important;
+	display: block;
+}
+nav a{
+	color: rgba(222, 218, 229, 0.79) !important;
+	font-size: 0.8em;
+}
+.p-obl{
+	font-family: "Futura extra bold";
+	text-align: center;
+	color: rgba(29,14,53);
+	position: relative;
+	bottom: 155px;
+	right: 138px;
+	z-index: 10;
+	font-size: 1.2em;
+}
+h2, h3{
+	font-family: 'Futura bold'
+}
+.footer{
+	padding-right: 18%;
+	padding-left: 18%;
+	width: 100%;
+	position: relative;
+	bottom: 320px;
+	/*margin-top: 95px;*/
+	& p{
+		color: rgb(127, 119, 144);
+	}
+}
+h{
+	font-family: "Futura bold";
+}
+.soc{
+	border-radius: 8px;
+	background-color: rgba(115,108,175);
+	margin-right: 10px;
+	width: 55px;
+	height: 55px;
+}
 .moon{
 	top: -757px;
 	left: 832px;
 }
 .ds-btn{
-	height: 50px;
-	width: 200px;
+	/*height: 50px;*/
+	/*width: 200px;*/
+	padding: 8px 40px;
 	border-radius: 50px;
 	background-color: #fced9a;
 }
@@ -34,4 +130,9 @@ body{
 	background-color: rgb(115, 109, 174);
 	padding: 20px;
 	margin: 10px;
+	& p{
+		text-align: center;
+		font-family: "Futura bold";
+		line-height: 100%;
+	}
 }
