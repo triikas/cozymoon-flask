@@ -11,11 +11,14 @@
 	src: url(fonts/FuturaPTBold.otf)  format('opentype');
 }
 body{
-    background-color: #261c44;
+    background-color: #1d0e35;
     color: #ffffff;
 	padding: 0;
 	font-family: Futura normal;
 	font-size: 1.4em;
+}
+a{
+	text-decoration: none;
 }
 .footer-nav-block{
 	width: 155px;
@@ -24,20 +27,84 @@ body{
 	}
 }
 .image{
-	background-image : url(img/fon2.svg);
+	/*background-image : url(img/fon2.svg);*/
 	background-repeat : no-repeat;
 	background-size: cover;
+	background-position: center;
 	position : absolute ;
 	left : 0px;
 	top : 0px;
 	width : 100%;
-	height : 3361px;
+	/*height : 3361px;*/
+}
+.under-moon{
+	background-image : url(img/fon2.svg);
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .moon-block{
-	background: linear-gradient(to left, #716CADFF, rgba(113, 108, 173, 0));
-	height: 548px;
+	/**/
+	/*height: 548px;*/
+	position: relative;
 	width: 100%;
+	& *{
+		z-index: 2;
+	}
+	background-color: rgba(37,28,68);
 
+
+}
+.under-moon{
+
+	background-image : url(img/dl2.png);
+	background-repeat : no-repeat;
+	background-size: auto;
+	background-position: left;
+	width: 100%;
+	height: 490px;
+	border-radius: 30px;
+}
+.ivent{
+	margin-top: 150px;
+	/*min-height: 590px;*/
+}
+.mid{
+	background-image : url(img/mid-up.png);
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-position: center;
+	position : absolute;
+	width: 100%;
+	top: 300px;
+	height: 700px;
+}
+.mid2{
+	background-image : url(img/mid-down.png);
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-position: center;
+	position : absolute;
+	width: 100%;
+	/*top: 300px;*/
+	height: 700px;
+}
+.down{
+	background-image : url(img/down.svg);
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*position : absolute;*/
+	width: 100%;
+	/*bottom: 0;*/
+	height: 900px;
+}
+.moon-grad{
+	background: linear-gradient(to left, #716CADFF, rgba(113, 108, 173, 0));
+	height: 547px;
+	width: 100%;
+	top: 1100px;
+	z-index: 1;
 }
 h4{
 	font-family: "Futura bold";
@@ -93,19 +160,24 @@ nav a{
 h2, h3{
 	font-family: 'Futura bold'
 }
-.footer{
-	padding-right: 18%;
-	padding-left: 18%;
-	width: 100%;
-	position: relative;
-	bottom: 320px;
-	/*margin-top: 95px;*/
-	& p{
-		color: rgb(127, 119, 144);
-	}
-}
+/*.footer{*/
+/*	padding-right: 18%;*/
+/*	padding-left: 18%;*/
+/*	width: 100%;*/
+/*	position: relative;*/
+/*	bottom: 320px;*/
+/*	!*margin-top: 95px;*!*/
+/*	& p{*/
+/*		color: rgb(127, 119, 144);*/
+/*	}*/
+/*}*/
 h{
 	font-family: "Futura bold";
+}
+@media (max-width: 1505px) {
+	.form{
+		display: none;
+	}
 }
 .soc{
 	border-radius: 8px;
@@ -115,8 +187,48 @@ h{
 	height: 55px;
 }
 .moon{
-	top: -757px;
-	left: 832px;
+	/*position: relative;*/
+	/*top: -757px;*/
+	/*left: 832px;*/
+	/*float: right;*/
+}
+.menu{
+	min-width: 835px;
+	height: 100vh;
+	z-index: 10;
+	backdrop-filter: blur(40px);
+	& .out{
+		height: 80px;
+		width: 80px;
+		border-radius: 40px;
+		border: #dde0e3 solid 2px;
+	}
+	& .games{
+		padding-right: 15%;
+		padding-left: 15%;
+		display: flex;
+		align-items: center;
+		height: 90%;
+	}
+	& .games p{
+		margin: 0;
+		color: rgba(115,108,175);
+		line-height: 5px;
+	}
+	& .games a{
+		font-size: 3em;
+		line-height: 80px;
+		font-family: "Futura bold";
+
+	}
+	& .games .option{
+		display: flex;
+		justify-content: right;
+
+	}
+}
+.window nav{
+	justify-content: space-around;
 }
 .ds-btn{
 	/*height: 50px;*/
@@ -124,15 +236,118 @@ h{
 	padding: 8px 40px;
 	border-radius: 50px;
 	background-color: #fced9a;
+	&:hover{
+		background-color: #fced9a;
+		box-shadow: #fced9a 0 0 8px;
+	}
+}
+.game-blocks{
+	width: 600px;
+}
+.game-blocks-min{
+	width: 600px;
+	position: relative;
+	bottom: 300px;
+	/*left: 200px;*/
 }
 .game-block{
 	border-radius: 35px;
 	background-color: rgb(115, 109, 174);
 	padding: 20px;
 	margin: 10px;
+	width: 150px;
 	& p{
 		text-align: center;
 		font-family: "Futura bold";
 		line-height: 100%;
+	}
+}
+.menu-min{
+	display: none!important;
+}
+@media (max-width: 1462px) {
+	.menu-max{
+		display: none!important;
+	}
+	.menu-min{
+		display: flex!important;
+	}
+	.window nav{
+		justify-content: space-between;
+	}
+}
+.gb-moon-min{
+	display: none;
+	/*position: relative;*/
+	/*bottom: 200px;*/
+
+}
+.gb-moon-max{
+	display: flex;
+	justify-content: space-around;
+
+}
+.gb-moon-max > .game-blocks{
+	padding-top: 120px;
+}
+.gb-moon-min-in{
+	width: 1200px;
+}
+@media (max-width: 1527px) {
+	.gb-moon-min{
+		display: flex;
+		justify-content: center;
+	}
+	.gb-moon-max{
+		display: none;
+	}
+	.moon-grad{
+		height: 730px;
+	}
+	/*.moon{*/
+	/*	transform: scale(-1, 1);*/
+	/*}*/
+	/*.game-blocks-min{*/
+	/*	position: relative;*/
+	/*	right: 200px;*/
+	/*}*/
+}
+@media (max-width: 1327px) {
+	.gb-moon-min-in{
+		width: 1100px;
+	}
+	.game-blocks-min{
+		bottom: 260px;
+	}
+	.game-block{
+		width: 190px!important;
+		display: flex;
+		justify-content: center;
+		height: 219px;
+	}
+	.game-blocks-min{
+		width: 720px;
+
+	}
+}
+@media (max-width: 1180px) {
+	.gb-moon-min-in{
+		width: 1000px;
+	}
+	.game-blocks-min{
+		bottom: 200px;
+	}
+}
+@media (max-width: 1010px) {
+	.gb-moon-min-in{
+		width: 100%;
+	}
+	.gmmi-2{
+		justify-content: center!important;
+	}
+	.moon{
+		position: relative;
+		left: 200px;
+
 	}
 }

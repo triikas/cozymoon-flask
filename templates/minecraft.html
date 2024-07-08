@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class="mid"></div>
+
     <div class="menu position-fixed w-100 d-none">
         <nav class="d-flex justify-content-between align-items-center" style="padding-left: 60px; padding-right: 60px; padding-top: 30px;">
             <div  class="d-flex align-items-center">
@@ -72,7 +73,7 @@
                 </div>
                 <div class="d-flex justify-content-around align-items-center menu-max">
                     <div><a>Dota 2</a></div>
-                    <div class="mx-5"><a href="minecraft">Minecraft</a></div>
+                    <div class="mx-5"><a>Minecraft</a></div>
                     <div class="mx-5"><a>VALORANT</a></div>
                     <div class="mx-5"><a>Mobile Legends</a></div>
                     <div class="mx-5"><a>Counter-Strike: 2</a></div>
@@ -95,91 +96,13 @@
 
             </div>
         </div>
-        <div class="moon-grad position-absolute"></div>
-        <div class="moon-block">
-            <div class="gb-moon-max">
-                <div class="game-blocks" {#style=" position: relative; bottom: 190px; margin-left: 130px"#}>
-                    <div class="d-flex justify-content-start">
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/dota.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>Dota 2</p></div>
-                        </div>
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/mini.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>Minecraft</p></div>
-                        </div>
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/val.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>Valorant</p></div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-start" style="margin-left: 85px">
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/ml.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>Mobile Legends</p></div>
-                        </div>
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/cs2.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>Counter-Strike: 2</p></div>
-                        </div>
-                        <div class="game-block">
-                            <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/lol.jpg') }}); background-position: center center; background-size: cover"></div>
-                            <div class="d-flex justify-content-center mt-2"><p>League of Legends</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="moon" style="background-image: url({{ url_for('static', filename='img/moon.svg') }}); width: 880px; height: 880px; ">
-            <h2 style="font-size: 3.3em; margin-left: 850px; position: relative; right: 820px; top: 110px">О&#160;разделах</h2>
-            <div style="position: relative; left: 160px; top: 150px; width: 400px">
-                <p class="mb-0 mx-2" style="font-size: 1.15em; line-height: 130%; text-align: right">В нашем сообществе всё проис-</p>
-                <p class="mb-0" style="font-size: 1.15em; line-height: 130%; text-align: right">ходящее внутри разных игр и<br> дисциплин, делится на разделы.<br> Открыв их вы получите доступ к</p>
-                <p class="mb-0 mx-1" style="font-size: 1.15em; line-height: 130%; text-align: right"> основной части контента сооб-</p>
-                <p class="mb-0 mx-4" style="font-size: 1.15em; line-height: 130%; text-align: right">щества</p>
-            </div>
-        </div>
-            </div>
-            <div class="gb-moon-min">
-                <div>
-                    <div class="gb-moon-min-in d-flex justify-content-end"><div class="moon" style="background-image: url({{ url_for('static', filename='img/moon3.svg') }}); width: 880px; height: 880px; ">
-                    <h2 style="font-size: 3.3em; margin-left: 850px; position: relative; right: 820px; top: 110px">О&#160;разделах</h2>
-                    <div style="position: relative; left: 160px; top: 150px; width: 400px">
-                        <p class="mb-0 mx-2" style="font-size: 1.15em; line-height: 130%; text-align: right">В нашем сообществе всё проис-</p>
-                        <p class="mb-0" style="font-size: 1.15em; line-height: 130%; text-align: right">ходящее внутри разных игр и<br> дисциплин, делится на разделы.<br> Открыв их вы получите доступ к</p>
-                        <p class="mb-0 mx-1" style="font-size: 1.15em; line-height: 130%; text-align: right"> основной части контента сооб-</p>
-                        <p class="mb-0 mx-4" style="font-size: 1.15em; line-height: 130%; text-align: right">щества</p>
-                    </div>
-                </div></div>
-                    <div class="gb-moon-min-in d-flex justify-content-start gmmi-2"><div class="game-blocks-min" {#style=" position: relative; bottom: 190px; margin-left: 130px"#}>
-                <div class="d-flex justify-content-start">
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/dota.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>Dota 2</p></div>
-                    </div></div>
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/mini.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>Minecraft</p></div>
-                    </div></div>
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/val.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>Valorant</p></div>
-                    </div></div>
-                </div>
-                <div class="d-flex justify-content-start" style="margin-left: 85px">
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/ml.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>Mobile Legends</p></div>
-                    </div></div>
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/cs2.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>Counter-Strike: 2</p></div>
-                    </div></div>
-                    <div class="game-block"><div style="width:110px">
-                        <div style="border-radius:55px;height: 110px; width:110px;background-image: url({{ url_for('static', filename='img/lol.jpg') }}); background-position: center center; background-size: cover"></div>
-                        <div class="d-flex justify-content-center mt-2"><p>League of Legends</p></div>
-                    </div></div>
-                </div>
-            </div></div>
-                </div>
+{#        <div class="moon-grad position-absolute"></div>#}
+        <div class="d-flex justify-content-center" style="background-color: rgba(37,28,68);">
+            <div style="width: 80%">
+                <div style="width: 100px; height: 100px; border-radius: 50px; background-color: #6a1a21"></div>
+                <div style="border-radius: 30px; height: 150px; background-color: #6f6bab; margin-left: 120px; margin-top: 20px; padding: 10px">Здарова ебать</div>
+                <div style="border-radius: 30px; height: 60px; width: 150px; background-color: #6f6bab; margin-left: 120px; margin-top: 20px; padding: 10px">Попиздели!</div>
+                <div style="border-radius: 30px; height: 150px; width: 150px; background-color: #6f6bab; margin-left: 120px; margin-top: 20px;"><img class="w-100 h-100" style="border-radius: 30px;" src="{{ url_for('static', filename='img/st.jpg') }}"> </div>
             </div>
         </div>
         <div class="mid2"></div>
